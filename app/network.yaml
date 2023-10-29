@@ -1,0 +1,124 @@
+nodes:
+  - name: "the_hague"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_0"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_1"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_2"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_3"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_4"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_5"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "repeater_6"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+  - name: "delft"
+    gate_fidelity: 1
+    qubits:
+      - id: 0
+        t1: 0
+        t2: 0
+      - id: 1
+        t1: 0
+        t2: 0
+
+links:
+  - name: ch0
+    node_name1: "the_hague"
+    node_name2: "repeater_0"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch1
+    node_name1: "repeater_0"
+    node_name2: "repeater_1"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch2
+    node_name1: "repeater_1"
+    node_name2: "repeater_2"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch3
+    node_name1: "repeater_2"
+    node_name2: "repeater_3"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch4
+    node_name1: "repeater_3"
+    node_name2: "repeater_4"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch5
+    node_name1: "repeater_4"
+    node_name2: "repeater_5"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch6
+    node_name1: "repeater_5"
+    node_name2: "repeater_6"
+    noise_type: Depolarise
+    fidelity: 0.0
+  - name: ch7
+    node_name1: "repeater_6"
+    node_name2: "delft"
+    noise_type: Depolarise
+    fidelity: 0.0
